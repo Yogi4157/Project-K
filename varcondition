@@ -1,0 +1,11 @@
+#!/bin/bash
+
+user=$(pwd)
+
+if [ "$user" == "root" ]; then
+    echo "You are root"
+else
+    echo "You are working $user"
+fi
+
+#End

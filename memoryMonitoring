@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Disk usage:"
+df -h
+
+echo "Memory usage:"
+powershell -Command "Get-CimInstance Win32_OperatingSystem | Select-Object FreePhysicalMemory,TotalVisibleMemorySize"
+
+echo "Top processes:"
+powershell -Command "Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 | Format-Table"
+
+#End

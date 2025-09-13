@@ -1,0 +1,6 @@
+#!/bin/bash
+
+name="My name is Yogesh"
+printf "Hello, %s!\n" "$name"
+
+#End
